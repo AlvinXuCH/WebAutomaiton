@@ -1,0 +1,13 @@
+2016-08-06 15:21:22,388 [line:21] Open Base sitehttps://www.google.com/
+2016-08-06 15:21:22,388 [line:409] POST http://127.0.0.1:64932/session/691cfaa8eeb1f3fb0f438c66715c3c83/url {"url": "https://www.google.com/", "sessionId": "691cfaa8eeb1f3fb0f438c66715c3c83"}
+2016-08-06 15:21:29,172 [line:502] Finished Request
+2016-08-06 15:21:29,172 [line:409] POST http://127.0.0.1:64932/session/691cfaa8eeb1f3fb0f438c66715c3c83/window/current/maximize {"sessionId": "691cfaa8eeb1f3fb0f438c66715c3c83", "windowHandle": "current"}
+2016-08-06 15:21:29,935 [line:502] Finished Request
+2016-08-06 15:21:29,936 [line:409] POST http://127.0.0.1:64932/session/691cfaa8eeb1f3fb0f438c66715c3c83/element {"sessionId": "691cfaa8eeb1f3fb0f438c66715c3c83", "value": "lst-ib", "using": "id"}
+2016-08-06 15:21:30,730 [line:502] Finished Request
+2016-08-06 15:21:30,730 [line:409] POST http://127.0.0.1:64932/session/691cfaa8eeb1f3fb0f438c66715c3c83/element/0.603362251379131-1/value {"id": "0.603362251379131-1", "sessionId": "691cfaa8eeb1f3fb0f438c66715c3c83", "value": ["P", "y", "t", "h", "o", "n", "\ue006"]}
+2016-08-06 15:21:31,606 [line:502] Finished Request
+2016-08-06 15:21:32,606 [line:409] GET http://127.0.0.1:64932/session/691cfaa8eeb1f3fb0f438c66715c3c83/title {"sessionId": "691cfaa8eeb1f3fb0f438c66715c3c83"}
+2016-08-06 15:21:32,619 [line:502] Finished Request
+2016-08-06 15:21:32,626 [line:409] DELETE http://127.0.0.1:64932/session/691cfaa8eeb1f3fb0f438c66715c3c83/window {"sessionId": "691cfaa8eeb1f3fb0f438c66715c3c83"}
+2016-08-06 15:21:33,967 [line:502] Finished Request
