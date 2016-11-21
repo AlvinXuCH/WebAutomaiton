@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>91af3021-1c4d-45e6-817b-172afd4cae31</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>WebAutomation.py</StartupFile>
+    <StartupFile>TestCasesRepository\TC_Search_Python.py</StartupFile>
     <SearchPath>TestCasesRepository\;CommonLibrary\;WebPages\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -44,6 +44,7 @@
     <Compile Include="CommonLibrary\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="TestCasesRepository\TC_Search_Python - Copy.py" />
     <Compile Include="WebPages\BasePage.py">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +56,12 @@
     </Compile>
     <Compile Include="WebAutomation.py" />
     <Compile Include="TestCasesRepository\TC_Search_Python.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebPages\pyse.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebPages\SELocation.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="WebPages\__init__.py">

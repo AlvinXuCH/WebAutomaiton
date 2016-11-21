@@ -1,5 +1,5 @@
 ﻿import unittest
-#from selenium import webdriver
+from selenium import webdriver
 from GoogleMainPage import GoogleMainPage
 import CommonConfiguration as cc
 from TestCaseInfo import TestCaseInfo
@@ -10,6 +10,7 @@ import time
 
 class Test_TC_Login(unittest.TestCase):
     def setUp(self):
+        self.driver = webdriver.Chrome()
         self.base_url = cc.baseUrl()
         self.testCaseInfo = TestCaseInfo(id=1,name="Test search Python",owner='xua')
         self.testResult = TestReport()
@@ -21,21 +22,15 @@ class Test_TC_Login(unittest.TestCase):
 
             #Step1: open base site
             LogUtility.Log("Open Base site"+self.base_url)
-            googleSearch = GoogleMainPage()
-  
-            googleSearch.open(self.base_url)
-            #self.driver.get(self.base_url)
-            #self.driver.maximize_window()
+            self.driver.get(self.base_url)
+            self.driver.maximize_window()
             #Step2: Open Login page
-         
+            googleSearch = GoogleMainPage()
 
             googleSearch.inputSearchContent('Python')
 
             time.sleep(2)
-            title = googleSearch.getTitle()
-            
-            assert('Python' in title)
-            print(title)
+            assert('Python' in self.driver.title)
 
             self.testCaseInfo.result = "Pass"
 
@@ -47,7 +42,7 @@ class Test_TC_Login(unittest.TestCase):
             self.testCaseInfo.secondsDuration = cc.timeDiff(self.testCaseInfo.starttime,self.testCaseInfo.endtime)
         pass
     def tearDown(self):
-        #self.driver.close()
+        self.driver.close()
         self.testResult.WriteHTML(self.testCaseInfo)
 
 if __name__ == '__main__':
